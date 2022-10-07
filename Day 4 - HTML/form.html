@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <style>
+    body {
+      display: grid;
+      justify-content: center;
+      max-width: 100%;
+    }
+
+    #name,
+    #department {
+      width: 240px;
+    }
+
+    #about {
+      width: 200px;
+      height: 60px;
+    }
+
+    @media screen and (max-width:450px) {
+
+      .name,
+      .department,
+      .about {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #name,
+      #department,
+      #about {
+        margin-top: 10px;
+        width: 90vw;
+      }
+
+      .home {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .answer {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .topic {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .topic-1 {
+        margin-bottom: 10px;
+      }
+
+      .movie {
+        display: flex;
+        flex-direction: column;
+        gap: 10px
+      }
+
+      select {
+        width: max-content;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Interests Survey Form</h1>
+  <form action="#">
+    <div class="name">
+      <label for="name">Enter your name:</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <p></p>
+    <div class="department">
+      <label for="name">Enter your department:</label>
+      <input type="text" name="department" id="department">
+    </div>
+    <p></p>
+    <div class="about">
+      <label for="about">Tell us a little about yourself:</label>
+      <textarea type="text" name="about" id="about"></textarea>
+    </div>
+    <p></p>
+    <p class="home">
+      <span>Do you exercise at home?</span>
+      <span class="answer">
+        <span class="yes">
+          <input type="radio" name="true" id="true">
+          <label for="true">Yes</label>
+        </span>
+        <span class="no">
+          <input type="radio" name="false" id="false">
+          <label for="true">No</label>
+        </span>
+      </span>
+    </p>
+
+    <p>How do you like to read about your favorite topics?</p>
+    <span class="topic">
+      <span class="topic-1">
+        <input type="checkbox" name="book" id="book">
+        <label for="book">Books</label>
+        <input type="checkbox" name="online" id="online">
+        <label for="online">Online resources</label>
+      </span>
+      <span class="topic-2">
+        <input type="checkbox" name="phone" id="phone">
+        <label for="phone">Phone apps</label>
+        <input type="checkbox" name="magazines" id="magazines">
+        <label for="">Magazines</label>
+      </span>
+    </span>
+    <p></p>
+
+    <p class="movie">
+      <label for="movie">What genre of movies do you like?</label>
+      <select name="movie" id="movie">
+        <option value="comedy">comedy</option>
+        <option value="action">action</option>
+        <option value="thrill">thrill</option>
+      </select>
+    </p>
+    <p></p>
+    <input type="submit" value="Submit form">
+  </form>
+  <div>&nbsp;</div>
+  <a href="index.html">Back Home</a>
+</body>
+
+</html>
