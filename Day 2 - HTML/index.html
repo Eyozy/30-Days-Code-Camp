@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 2 - HTML</title>
+  <style>
+    .container {
+      display: grid;
+      justify-content: center;
+      width: 800px;
+      margin: 0 auto;
+      border: 1px solid #000;
+    }
+
+    @media screen and (max-width:900px) {
+      .container {
+        border: none;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Codemarch</h3>
+    <img src="tea.jpg" alt="A cup of tea is on the table" style="width:200px;height:150px">
+    <h5>List of five programming languages</h5>
+    <ol>
+      <li><a href="https://www.javascript.com/">JavaScript</a></li>
+      <li><a href="#">Java</a></li>
+      <li><a href="#">Python</a></li>
+      <li><a href="#">C</a></li>
+      <li><a href="#">C++</a></li>
+    </ol>
+    <h5>Ingredients of Tea</h5>
+    <ul>
+      <li>Milk</li>
+      <li>Water</li>
+      <li>Sugar</li>
+      <li>Tealeaf</li>
+    </ul>
+    <h5>A description List</h5>
+    <dl>
+      <dt>Coffee</dt>
+      <dd>- black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+  </div>
+</body>
+
+</html>

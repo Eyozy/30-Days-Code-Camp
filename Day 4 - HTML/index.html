@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 4 - HTML</title>
+  <style>
+    .container {
+      display: grid;
+      justify-content: center;
+    }
+
+    div {
+      display: flex;
+      column-gap: 80px;
+      align-items: center;
+    }
+
+    @media screen and (max-width:900px) {
+      .container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      iframe {
+        border: none;
+      }
+
+      .media {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <iframe src="table.html" width="800px" height="480px" name="iframe"></iframe>
+    <div class="text">
+      <p>
+        <a href="form.html" target="iframe">Click Here</a>
+      </p>
+      <p>I &#128150 Coding.</p>
+    </div>
+    <div class="media">
+      <video src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" controls width="300"
+        height="200" muted></video>
+      <canvas id="Canvas" width="300" height="200" style="border:1px solid #000;"></canvas>
+    </div>
+  </div>
+</body>
+
+</html>
