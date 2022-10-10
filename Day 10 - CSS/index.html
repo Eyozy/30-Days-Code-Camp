@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 10 - CSS</title>
+  <style>
+    .container {
+      width: 1300px;
+      display: grid;
+      margin: 100px auto;
+      border: 3px solid black;
+    }
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: brown;
+      text-decoration: underline solid black;
+      text-shadow: 2px 0 5px black;
+    }
+
+    p {
+      text-indent: 40px;
+      text-align: justify;
+      letter-spacing: 3px;
+      cursor: pointer;
+    }
+
+    a {
+      text-decoration: none;
+      color: #008CBA;
+    }
+
+    .text {
+      width: 100%;
+      height: 100px;
+      text-align: center;
+      margin-top: 20px;
+      padding: 30px;
+      border: 3px solid gray;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .picture {
+      width: 1200px;
+    }
+
+    img {
+      width: 50%;
+      height: 300px;
+      float: left;
+      object-fit: cover;
+    }
+
+    .Illustrations {
+      transition: all .4s;
+    }
+
+    .Illustrations:hover {
+      opacity: .5;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Codemarch</h1>
+    <p>We help developers to understand JavaScript &amp; React in depth.We provide Web development tools &amp; design
+      resources <a href="https://twitter.com/codemarch">"Click Here"</a></p>
+    <div class="picture">
+      <img src="picture.jpeg" alt="A computer">
+      <img src="Illustrations.jpeg" alt="A group of people talking about work" class="Illustrations">
+    </div>
+    <p class="text">We help developers to understand Web Devlopment</p>
+  </div>
+</body>
+
+</html>
