@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  padding: 0 60px 30px 60px;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Heading Style */
+header .navigation {
+  background-color: #fff;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 1;
+  z-index: 100;
+}
+
+header .navigation input {
+  opacity: 0;
+  visibility: hidden;
+}
+
+header .navigation label {
+  width: 40px;
+  height: 40px;
+  background-color: #171717;
+  display: inline-block;
+  position: fixed;
+  top: 20px;
+  right: 60px;
+  z-index: 100;
+}
+
+/* Heading Title Style */
+header .navigation label .navigation__heading {
+  position: fixed;
+  top: 20px;
+  left: 60px;
+}
+
+header .navigation label .navigation__heading a {
+  font-size: 24px;
+  font-weight: 900;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Heading Navigation Bar Style */
+header .navigation label .navigation__icon {
+  position: relative;
+}
+
+header .navigation label .navigation__icon,
+header .navigation label .navigation__icon::before,
+header .navigation label .navigation__icon::after {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  display: inline-block;
+}
+
+header .navigation label .navigation__icon::before,
+header .navigation label .navigation__icon::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  transition: all .2s;
+}
+
+header .navigation label .navigation__icon {
+  top: 18px;
+  left: 7.5px;
+}
+
+header .navigation label .navigation__icon::before {
+  top: -8px;
+}
+
+header .navigation label .navigation__icon::after {
+  top: 8px;
+}
+
+/* Heading Navigation Bar Click Effect */
+header .navigation input:checked+.navigation label .navigation__icon {
+  background-color: transparent;
+}
+
+header .navigation input:checked+.navigation label .navigation__icon::before {
+  transform: rotate(135deg);
+  top: 0;
+}
+
+header .navigation input:checked+.navigation label .navigation__icon::after {
+  transform: rotate(-135deg);
+  top: 0;
+}
+
+/* Navigation Style */
+nav {
+  width: 0;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  z-index: 10;
+}
+
+.navigation input:checked~nav {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  background-color: #fff;
+}
+
+nav ul {
+  justify-self: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  text-decoration: none;
+  color: #171717;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+nav .social-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+nav .social-icon a {
+  display: inline-block;
+}
+
+nav .social-icon a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav .social-icon a:hover {
+  color: #339af0;
+}
+
+@media only screen and (max-width:900px) {
+  .container {
+    padding: 30px 40px;
+  }
+
+  header .navigation label {
+    right: 30px;
+  }
+
+  header .navigation label .navigation__heading {
+    left: 30px;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  header .navigation label {
+    width: 25px;
+    height: 25px;
+    right: 20px;
+  }
+
+  header .navigation label .navigation__icon,
+  header .navigation label .navigation__icon::before,
+  header .navigation label .navigation__icon::after {
+    width: 15px;
+    height: 1.5px;
+  }
+
+  header .navigation label .navigation__heading a {
+    font-size: 18px;
+  }
+
+  header .navigation label .navigation__heading {
+    left: 20px;
+  }
+
+  header .navigation label .navigation__icon {
+    top: 12.5px;
+    left: 5px;
+  }
+
+  header .navigation label .navigation__icon::before {
+    top: -5px;
+  }
+
+  header .navigation label .navigation__icon::after {
+    top: 5px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav .social-icon {
+    justify-content: center;
+    order: 5;
+    flex-direction: row;
+  }
+}
