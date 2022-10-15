@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+  <title>Day 13 - CSS</title>
+  <style>
+    .container {
+      display: grid;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    .content {
+      width: 1000px;
+      height: 420px;
+      background: linear-gradient(90deg, #00ffeb 0%, #073abb 100%);
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.5rem;
+      text-shadow: .2rem .2rem red;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: -20px;
+    }
+
+    .flex p {
+      width: 300px;
+      height: 300px;
+      background-color: #b1e1ff;
+      border-radius: 15px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      transition: all .4s;
+    }
+
+    img:hover {
+      width: 200px;
+      height: 200px;
+      transform: rotate(2deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <p>Codemarch</p>
+      <div class="flex">
+        <p><img src="img-1.png" alt="A group of people talking about work"></p>
+        <p><img src="img-2.png" alt="A group of people talking about work"></p>
+        <p><img src="img-3.png" alt="A group of people talking about work"></p>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
