@@ -1,0 +1,205 @@
+@media only screen and (max-width:1500px) {
+
+  /* Home Area Style */
+  .home__content {
+    height: 45vh;
+  }
+
+  /* About Area Style */
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about__content,
+  .about__follow {
+    width: 100%;
+  }
+
+  .about__follow figure {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Project Area Style */
+  .project {
+    padding: 60px 100px;
+  }
+
+  .project__items {
+    display: flex;
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  .home__content--front h1 {
+    font-size: 40px;
+  }
+
+  .home__content {
+    height: 37vh;
+  }
+
+  .home__content--front {
+    padding: 30px;
+  }
+
+  .home__content--front h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  /* About Area Style */
+  .about {
+    padding: 60px 40px 0 40px;
+  }
+
+  /* Project Area Style */
+  .project {
+    padding: 40px;
+  }
+
+  .project__items {
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width:900px) {
+
+  /* Main Style */
+  main .heading {
+    font-size: 36px;
+  }
+
+  /* Home Area Style */
+  .home {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    height: 95vh;
+  }
+
+  .home__about {
+    width: 80%;
+  }
+
+  .home__content {
+    width: 100%;
+    height: 30vh;
+  }
+
+  .home__content--front {
+    top: 20px;
+    left: 20px;
+  }
+
+  .home__setting h2 {
+    font-size: 24px;
+  }
+
+  .home__setting p {
+    text-align: center;
+  }
+
+  .home__content--front h1 {
+    font-size: 32px;
+  }
+
+  .home__content--front p {
+    font-size: 18px;
+  }
+
+  /* About Area Style */
+  .about__follow h2 {
+    font-size: 20px;
+  }
+
+  /* Project Area Style */
+  .project {
+    padding: 60px;
+  }
+
+  .project__items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .contact form {
+    width: 550px;
+
+  }
+}
+
+@media only screen and (max-width:600px) {
+  main .heading {
+    font-size: 30px;
+  }
+
+  .home__setting h2 {
+    font-size: 18px;
+  }
+
+  .home__content {
+    height: 32vh;
+  }
+
+  .home__content--front {
+    padding: 30px 10px;
+  }
+
+  .home__content--front h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  .about__content h3 {
+    font-size: 18px;
+  }
+
+  .about__content h3 {
+    margin-bottom: 20px;
+  }
+
+  .about__content--description {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .about__content--detail {
+    padding: 30px 20px;
+  }
+
+  .about__content--detail ul li {
+    font-size: 14px;
+  }
+
+  .about__content--description p:first-child {
+    margin-bottom: 10px;
+  }
+
+  .about__follow h2 {
+    font-size: 18px;
+  }
+
+
+  .about,
+  .project,
+  .contact {
+    padding: 30px;
+  }
+
+  .project h2 {
+    font-size: 20px;
+  }
+
+  .contact h2 {
+    font-size: 20px;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+}

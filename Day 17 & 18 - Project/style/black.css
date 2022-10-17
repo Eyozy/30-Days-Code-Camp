@@ -1,0 +1,57 @@
+body {
+  background-color: #192734;
+  color: #fff;
+}
+
+.header p:first-child a,
+.header p a {
+  color: #fff;
+}
+
+.home__setting p {
+  color: #f6f6f6;
+}
+
+.home__theme--white a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fff;
+  border: none;
+}
+
+.home__theme--black a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #000;
+  border: 3px solid #fff;
+}
+
+.home__theme--green a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #2f9e44;
+  border: 2px solid #fff
+}
+
+.home__theme--pink a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #c2255c;
+  border: 2px solid #fff;
+}
+
+.home__content--front {
+  background-color: rgb(25, 39, 52, .4);
+}
+
+.home__content--back {
+  background-color: rgb(0, 0, 0, .8);
+}

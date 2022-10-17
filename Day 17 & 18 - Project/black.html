@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/queries.css">
+  <link rel="stylesheet" href="style/black.css">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>Codemarch</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <p><a href="index.html">Codemarch</a></p>
+      <p><a href="#contact">Contact</a>
+      </p>
+    </header>
+
+    <main>
+      <h1 class="heading">Hi,I'm CodeMarch</h1>
+      <section class="home">
+        <div class="home__setting">
+          <figure>
+            <img src="./image/logo.jpeg" alt="Codemarch Logo">
+          </figure>
+          <h2>Personalize Theme</h2>
+          <div class="home__theme">
+            <div class="home__theme--white">
+              <a href="index.html"></a>
+            </div>
+
+            <div class="home__theme--black">
+              <a href="black.html"></a>
+            </div>
+
+            <div class="home__theme--green">
+              <a href="green.html"></a>
+            </div>
+
+            <div class="home__theme--pink">
+              <a href="pink.html"></a>
+            </div>
+          </div>
+          <p>*Theme settings will be saved for your next vist</p>
+        </div>
+
+        <div class="home__about">
+          <div class="home__content">
+            <div class="home__content--front">
+              <h1>What We Do</h1>
+              <p>We help developers to understand JavaScript &amp; React in depth Web dev &amp; design resources</p>
+            </div>
+            <div class="home__content--back">&nbsp;
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="about__content">
+          <h3>More about me</h3>
+          <div class="about__content--description">
+            <p>We build new projects just to tickle my brain and love teaching others how they're made.</p>
+            <p>We help developers to understand JavaScript &amp; React in depth.</p>
+          </div>
+          <h3>Top Expertise</h3>
+          <p>For Resources and E-Book : <a href="">Download</a></p>
+          <div class="about__content--detail">
+            <ul>
+              <li>JavaScript</li>
+              <li>React</li>
+              <li>UI/UX</li>
+              <li>Python</li>
+              <li>Postgres</li>
+            </ul>
+            <ul>
+              <li>Google Maps API</li>
+              <li>JS Charts</li>
+              <li>AWS</li>
+              <li>Heroku</li>
+              <li>HTML/CSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__follow">
+          <figure>
+            <img src="./image/website.jpeg" alt="">
+          </figure>
+          <h2>Find me on Twitter &amp; Youtube</h2>
+          <p>Youtube:&nbsp;<a href="https://www.youtube.com/channel/UCtrB3DB7ykzuTXcYxAdN57w"
+              target="_blank">@Codemarch</a>
+          </p>
+          <p>Twitter:&nbsp;<a href="https://twitter.com/codemarch" target="_blank">@Codemarch</a></p>
+        </div>
+      </section>
+
+      <section class="project">
+        <h2>Some of my past projects</h2>
+        <div class="project__items">
+          <div class="project__item">
+            <img src="./image/UI&UX.jpeg" alt="">
+            <div class="project__item--content">
+              <h4>UI/UX Treasure book</h4>
+              <p class="center">User interface design or user interface engineering is the design of user interfaces for
+                machines and
+                software, such as computers</p>
+              <a href="">Download</a>
+            </div>
+          </div>
+          <div class="project__item">
+            <img src="./image/JavaScript.jpeg" alt="">
+            <div class="project__item--content">
+              <h4>JavaScript for Starters: The Complete Guide</h4>
+              <p>JavaScript, often abbreviated to JS, is a programming language that is one of the core technologies of
+                the World Wide Web</p>
+              <a href="">Download</a>
+            </div>
+          </div>
+          <div class="project__item">
+            <img src="./image/React.jpeg" alt="">
+            <div class="project__item--content">
+              <h4>Membership Website</h4>
+              <p>React is a free and open-source front-end JavaScript library for building user interfaces based on UI
+                components. It is maintained by Meta and a community.</p>
+              <a href="">Download</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Get In Touch</h2>
+        <form action="">
+          <div class="form__name">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+          </div>
+          <div class="form__subject">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject">
+          </div>
+          <div class="form__email">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+          </div>
+          <div class="form__message">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button>Send</button>
+        </form>
+      </section>
+
+    </main>
+
+  </div>
+</body>
+
+</html>
