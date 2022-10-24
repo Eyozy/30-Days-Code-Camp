@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Day 21 - Tailwind</title>
+</head>
+
+<body>
+  <div class="grid content-center h-screen">
+
+    <div class="max-w-md bg-white mx-auto my-5 rounded-xl overflow-hidden shadow-lg md:max-w-2xl">
+      <div class="md:flex">
+        <div>
+          <img src="../image/logo.jpeg" alt="Modern building architecture"
+            class="h-48 w-full object-cover md:w-48 md:h-full">
+        </div>
+
+        <div class="p-8">
+          <p class="text-indigo-500 uppercase text-sm font-semibold tracking-wide">Codemarch</p>
+          <p class="text-lg mt-1.5 leading-tight font-medium">Twitter Account</p>
+          <p class="mt-2 text-slate-500">We help developers to understand JavaScript & React in depth</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card rounded-none bg-cyan-100 mx-10 my-5 flex items-center flex-col">
+      <p class=" text-2xl text-pink-600 font-bold">Codemarch</p>
+      <p class="text-black-600 font-bold">We help developers to understand JavaScript & React in depth</p>
+    </div>
+
+    <div class="grid grid-rows-3 grid-flow-col gap-2 mx-4 my-5">
+      <div class="row-span-3 bg-gradient-to-r from-violet-500 to-fuchsia-500">
+        <h1 class="text-center py-5"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 inline-block" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+          </svg>
+          Codemarch</h1>
+      </div>
+      <div class="col-span-2 bg-gradient-to-r from-sky-500 to-indigo-500">
+        <p><svg xmlns="http://www.w3.org/2000/svg" class="w-4 inline-block" fill="none" viewBox="0 0 24 24"
+            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+          </svg>
+          We help developers to understand JavaScript & React in depth</p>
+      </div>
+      <div class="row-span-2 col-span-2 bg-gradient-to-r from-sky-500 to-indigo-500">
+        <p>Welcome to CodeCamp<svg xmlns="http://www.w3.org/2000/svg" class="w-4 inline-block" fill="none"
+            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+          </svg>
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <a href=""
+        class="rounded-full py-2 px-3 text-xs font-bold cursor-pointer tracking-wider bg-black text-white border-2 mt-8 outline outline-offset-2 outline-red-300">Submit</a>
+    </div>
+
+  </div>
+</body>
+
+</html>
