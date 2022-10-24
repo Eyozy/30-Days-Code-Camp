@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="512x512" href="../favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="../favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+  <link rel="manifest" href="../favicon/site.webmanifest">
+  <title>Day 23 & 24 - Tailwind Project</title>
+  <style>
+    header input:checked~nav {
+      opacity: 1;
+      visibility: visible;
+    }
+  </style>
+</head>
+
+
+<body>
+  <header class="flex justify-between bg-blue-400 px-4 py-4 relative">
+    <p class="inline-flex gap-2 z-20 items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-4">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+      </svg>
+      <span>Codemarch</span>
+    </p>
+
+    <input type="checkbox" id="menu" class="opacity-0 invisible">
+    <label for="menu" class="absolute right-2 flex items-center z-20 md:opacity-0 md:invisible">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </label>
+
+    <nav
+      class="max-w-xl opacity-0 invisible absolute top-full left-0 z-10 md:opacity-100 md:visible md:static md:top-0 md:mr-2">
+      <ul class="w-screen bg-white p-8 text-center md:w-full md:p-0 md:bg-transparent md:flex  md:gap-5">
+        <li class="mb-3 md:mb-0"><a href="#">Home</a></li>
+        <li class="mb-3 md:mb-0"><a href="#about">About US</a></li>
+        <li><a href="#contact">Contact US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="p-4">
+      <div class="md:flex gap-10">
+        <figure class="md:w-1/2">
+          <img src="https://z.photos/images/2022/10/23/E1vmmbGXsAU5ILcformatjpgnamelarge.jpg" alt=""
+            class="rounded-sm md:w-full md:h-full md:object-cover">
+        </figure>
+        <div class="mt-6 md:w-1/2 md:flex md:flex-col md:justify-center">
+          <h1 class="font-bold text-2xl mb-4">
+            <span class="block mb-1">Codemarch</span>
+            <span class="block">Codemarch Academy</span>
+          </h1>
+          <p class="text-gray-500 text-lg leading-9 mb-4">We help developers to understand HTML,CSS &amp; JavaScript in
+            depth.Online coding
+            bootcamps from top schools
+            and institutions.Learn coding skills with online bootcamps to advance your education and career with edX
+            today!</p>
+          <button class="bg-blue-600 text-white px-4 py-2 rounded-sm md:self-start"><a
+              href="https://codemarch.gumroad.com/l/lzdwp" target="_blank">Join Now</a></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="mt-8 px-4 md:text-center w-full">
+      <h2 class="uppercase font-semibold text-xl">Our Team</h2>
+      <p class="text-gray-500 text-lg leading-9 mt-4">Teamwork is the collaborative effort of a group to achieve a
+        common goal or to complete a task in the most
+        effective and efficient way.</p>
+
+      <div class="mt-6 md:flex md:flex-col md:gap-6 lg:grid lg:grid-cols-2">
+
+        <div class="mb-4 md:flex md:gap-5 md:mb-0">
+          <figure class="md:w-2/5 xl:w-1/4">
+            <img src="https://z.photos/images/2022/10/23/brooke-cagle-g1Kr4Ozfoac-unsplash.jpg" alt=""
+              class="rounded-sm md:w-full md:h-full md:object-cover">
+          </figure>
+          <div class="text-left mt-4 md:w-3/5 md:flex md:flex-col md:justify-evenly md:mt-0 xl:w-3/4">
+            <div class="mb-2">
+              <h4 class="font-semibold mb-1">Ajay</h4>
+              <p class="text-gray-500">UI Developer</p>
+            </div>
+            <p class="text-gray-700 leading-6 mb-3">Front-end web development is the development of the
+              graphical user
+              interface of a
+              website,through the use
+              of HTML,CSS,and JavaScript,so that users can view and interact with that website.</p>
+            <div>
+              <i class="ri-facebook-line ri-lg text-gray-600"></i>
+              <i class="ri-twitter-line ri-lg text-gray-600"></i>
+              <i class="ri-chat-3-line ri-lg text-gray-600"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-4 md:flex md:gap-5 md:mb-0">
+          <figure class="md:w-2/5 xl:w-1/4">
+            <img src="https://z.photos/images/2022/10/23/annie-spratt-dWYU3i-mqEo-unsplash.jpg" alt=""
+              class="rounded-sm md:w-full md:h-full md:object-cover">
+          </figure>
+          <div class="text-left mt-4 md:w-3/5 md:flex md:flex-col md:justify-evenly md:mt-0 xl:w-3/4">
+            <div class="mb-2">
+              <h4 class="font-semibold mb-1">Rizwan</h4>
+              <p class="text-gray-500">Designer</p>
+            </div>
+            <p class="text-gray-700 leading-6 mb-3">Web design encompasses many different skills and disciplines
+              in the
+              production and maintenance of websites.The different areas of web design include web graphic design,user
+              interface design.</p>
+            <div>
+              <i class="ri-facebook-line ri-lg text-gray-600"></i>
+              <i class="ri-twitter-line ri-lg text-gray-600"></i>
+              <i class="ri-chat-3-line ri-lg text-gray-600"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-4 md:flex md:gap-5 md:mb-0">
+          <figure class="md:w-2/5  xl:w-1/4">
+            <img src="https://z.photos/images/2022/10/23/brooke-cagle--uHVRvDr7pg-unsplash.jpg" alt=""
+              class="rounded-sm md:w-full md:h-full md:object-cover">
+          </figure>
+          <div class="text-left mt-4 md:w-3/5 md:flex md:flex-col md:justify-evenly md:mt-0 xl:w-3/4">
+            <div class="mb-2">
+              <h4 class="font-semibold mb-1">Mujeeb</h4>
+              <p class="text-gray-500">UI Developer</p>
+            </div>
+            <p class="text-gray-700 leading-6 mb-3">Web design encompasses many different skills and disciplines
+              in the
+              production and maintenance of websites.The different areas of web design include web graphic design,user
+              interface design.</p>
+            <div>
+              <i class="ri-facebook-line ri-lg text-gray-600"></i>
+              <i class="ri-twitter-line ri-lg text-gray-600"></i>
+              <i class="ri-chat-3-line ri-lg text-gray-600"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:flex md:gap-5 md:mb-0">
+          <figure class="md:w-2/5  xl:w-1/4">
+            <img src="https://z.photos/images/2022/10/23/priscilla-du-preez-XkKCui44iM0-unsplash.jpg" alt=""
+              class="rounded-sm md:w-full md:h-full md:object-cover">
+          </figure>
+          <div class="text-left mt-4 md:w-3/5 md:flex md:flex-col md:justify-evenly md:mt-0 xl:w-3/4">
+            <div class="mb-2">
+              <h4 class="font-semibold mb-1">Junaid</h4>
+              <p class="text-gray-500">Designer</p>
+            </div>
+            <p class="text-gray-700 leading-6 mb-3">Web design encompasses many different skills and disciplines
+              in the
+              production and maintenance of websites.The different areas of web design include web graphic design,user
+              interface design.</p>
+            <div>
+              <i class="ri-facebook-line ri-lg text-gray-600"></i>
+              <i class="ri-twitter-line ri-lg text-gray-600"></i>
+              <i class="ri-chat-3-line ri-lg text-gray-600"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contact" class="mt-8 px-4 pb-4 md:text-center md:mt-10">
+      <h2 class="uppercase font-semibold text-xl mb-2">Contact US</h2>
+      <p class="text-gray-500 text-lg leading-9 mb-6">We help developers to understand HTML,CSS &amp; JavaScript in
+        depth.</p>
+
+      <form
+        class="w-full mx-auto text-gray-800 flex flex-col gap-5 items-center pb-8 border-b-2 border-gray-200 md:w-4/5 lg:w-2/3 2xl:w-3/6">
+        <div class="flex gap-2 w-full">
+          <div class="flex flex-col text-left w-1/2">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name"
+              class="bg-slate-100 border-2 border-slate-300 rounded-sm w-full p-2">
+          </div>
+          <div class="flex flex-col text-left w-1/2">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email"
+              class="bg-slate-100  border-2 border-slate-300 rounded-sm w-full p-2">
+          </div>
+        </div>
+        <div class="flex flex-col text-left w-full">
+          <label for="message">Message</label>
+          <textarea name="message" id="message"
+            class="bg-slate-100  border-2 border-slate-300 rounded-sm w-full px-2 h-48"></textarea>
+        </div>
+        <button class="bg-blue-500 px-4 py-2 text-white rounded-sm">Submit</button>
+      </form>
+    </section>
+
+    <section class="flex flex-col items-center gap-5 pb-10">
+      <a href="mailto:codemarch@gmail.com" class="text-blue-400">codemarch@gmail.com</a>
+      <p class="text-gray-500 text-center">
+        <span class="block">Bangalore</span>
+        <span class="block">India</span>
+      </p>
+      <div class="text-gray-600 flex gap-3">
+        <i class="ri-facebook-fill"></i>
+        <i class="ri-twitter-fill"></i>
+        <i class="ri-instagram-line"></i>
+        <i class="ri-chat-3-fill"></i>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>

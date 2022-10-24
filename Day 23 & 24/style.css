@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #60a5fa;
+  padding: 16px;
+  max-width: 100%;
+}
+
+header p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header input,
+header label {
+  opacity: 0;
+  visibility: hidden;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+section {
+  padding: 0 16px;
+}
+
+.home {
+  display: flex;
+  padding: 16px;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.home figure {
+  width: 50%;
+  height: 100%;
+}
+
+.home figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.home div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.home div h1 {
+  margin-bottom: 20px;
+}
+
+.home div h1 span {
+  display: block;
+}
+
+.home div h1 span:first-child {
+  margin-bottom: 4px;
+}
+
+.home div p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: #808080;
+}
+
+
+.home div button {
+  border: none;
+  background-color: #2563eb;
+  padding: 10px 20px;
+  align-self: flex-start;
+  border-radius: 2px;
+}
+
+.home div button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.about p {
+  color: #808080;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.about .team-profile {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.about .team-profile div figure img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.about .team-profile .profile {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.about .team-profile .profile figure {
+  grid-column: 1 / span 1;
+  margin-right: 15px;
+}
+
+.about .team-profile .profile figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about .team-profile .profile>div {
+  grid-column: 2 / -1;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about .team-profile .profile .profile-detail>div p,
+.about .team-profile .profile .profile-detail>p {
+  font-size: 16px;
+}
+
+.about .team-profile .profile .profile-detail>p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.about .team-profile .profile .profile-detail .icon {
+  color: #808080;
+}
+
+.contact {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.contact h2 {
+  margin-bottom: 15px;
+}
+
+.contact>p {
+  font-size: 18px;
+  color: #808080;
+  margin-bottom: 40px;
+}
+
+.contact form {
+  width: 50%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  padding-bottom: 40px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.15);
+}
+
+.contact form * {
+  width: 100%;
+}
+
+.contact form .form__profile {
+  display: flex;
+  gap: 10px;
+}
+
+.contact form .form__profile div input {
+  padding: 10px;
+  background-color: #f1f5f9;
+  border: 2px solid rgba(128, 128, 128, 0.2);
+}
+
+.contact form .form__message textarea {
+  padding: 10px;
+  height: 200px;
+  background-color: #f1f5f9;
+  border: 2px solid rgba(128, 128, 128, 0.2);
+}
+
+.contact form button {
+  border: none;
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: #fff;
+  font-size: 16px;
+  width: auto;
+  align-self: center;
+  border-radius: 2px;
+}
+
+.contact>div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact>div a {
+  text-decoration: none;
+  color: #3b82f6;
+}
+
+.contact>div p span {
+  display: block;
+  color: #808080;
+}
+
+.contact>div>div {
+  color: #69707f;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact>div>div i:hover {
+  color: #3b82f6;
+}
+
+@media only screen and (max-width:1200px) {
+  .about .team-profile {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .contact form {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home figure,
+  .home div {
+    width: 100%;
+  }
+
+  .contact form {
+    width: 80%;
+
+  }
+}
+
+@media only screen and (max-width:768px) {
+  header {
+    position: relative;
+  }
+
+  header label {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 16px;
+    align-self: center;
+  }
+
+  header nav {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 20px;
+    background-color: #fff;
+  }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header input:checked~nav {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .about {
+    text-align: left;
+  }
+
+  .about .team-profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 1fr);
+    margin-top: 30px;
+  }
+
+  .about .team-profile .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact {
+    text-align: left;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+
+  .contact>div {
+    text-align: center;
+  }
+
+}
