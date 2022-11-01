@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Day 9 - CSS</title>
   <style>
-    div {
-      width: 680px;
-      height: 120px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 800px;
       margin: 100px auto;
       background-color: aqua;
     }
@@ -17,11 +18,17 @@
     p {
       color: brown;
     }
+
+    @media screen and (max-width:900px) {
+      .container {
+        width: auto;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div>
+  <div class="container">
     <h1>Codemarch</h1>
     <p>
       CSS stands for Cascading Sttyle Sheets.It is a style sheet language which is used to describe the look and
