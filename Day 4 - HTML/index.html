@@ -15,7 +15,14 @@
     div {
       display: flex;
       column-gap: 80px;
+      justify-content: center;
       align-items: center;
+    }
+
+    iframe {
+      min-width: 100%;
+      min-height: 50vh;
+      border: none;
     }
 
     @media screen and (max-width:900px) {
@@ -39,7 +46,7 @@
 
 <body>
   <div class="container">
-    <iframe src="table.html" width="800px" height="480px" name="iframe"></iframe>
+    <iframe src="table.html" name="iframe"></iframe>
     <div class="text">
       <p>
         <a href="form.html" target="iframe">Click Here</a>
